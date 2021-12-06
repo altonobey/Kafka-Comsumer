@@ -1,12 +1,12 @@
 # Kafka-Comsumer
 
-Start Zookeeper
+Start Zookeeper:
 bin/zookeeper-server-start.sh config/zookeeper.properties
 
 Start Kafka Server:
 bin/kafka-server-start.sh config/server.properties
 
-Create Kafka Topic:
+Create Kafka Topic: /n
 bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic Kafka_Example
 
 Consume from the Kafka Topic via Console:
